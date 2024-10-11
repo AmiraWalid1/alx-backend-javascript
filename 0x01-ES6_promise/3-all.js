@@ -5,8 +5,8 @@ async function handleProfileSignup() {
     .then(([photo, user]) => {
       console.log(`${photo.body} ${user.firstName} ${user.lastName}`);
     })
-    .catch((message) => {
-      console.log(message);
+    .catch(() => {
+      console.log('Signup system offline');
     });
 }
 
