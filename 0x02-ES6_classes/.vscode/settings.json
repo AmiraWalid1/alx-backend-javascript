@@ -1,0 +1,13 @@
+{
+  // General settings
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false, // Prevent automatic detection of indentation
+  "editor.formatOnSave": true, // Optional: Format code on save
+
+  // JavaScript specific settings
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  }
+}
