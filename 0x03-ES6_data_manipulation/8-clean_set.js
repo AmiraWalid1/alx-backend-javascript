@@ -1,9 +1,9 @@
 function cleanSet(mySet, str) {
-  let newArr = [];
+  let newstr = '';
   mySet.forEach((element) => {
-    str && element.startsWith(str) ? newArr.push(element.substring(str.length)) : '';
+    newstr += str && element.startsWith(str) ? `${element.substring(str.length)}-` : '';
   });
-  return newArr.join('-');
+  return newstr.slice(0, -1);
 }
 
 module.exports = cleanSet;
