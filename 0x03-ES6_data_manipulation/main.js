@@ -1,6 +1,3 @@
-import getListStudents from "./0-get_list_students.js";
-import updateStudentGradeByCity from "./4-update_grade_by_city.js";
+import setFromArray from "./6-set.js";
 
-console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }, { studentId: 1, grade: 86 }]));
-
-console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }]));
+console.log(setFromArray([12, 32, 15, 78, 98, 15]));
