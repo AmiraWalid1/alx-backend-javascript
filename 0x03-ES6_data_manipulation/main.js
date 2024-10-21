@@ -1,8 +1,15 @@
-import updateUniqueItems from "./10-update_uniq_items.js";
-import groceriesList from "./9-groceries_list.js";
+import { queryAPI, weakMap } from "./100-weak.js";
 
-const map = groceriesList();
-console.log(map);
+const endpoint = { protocol: 'http', name: 'getUsers' };
+weakMap.get(endpoint);
 
-updateUniqueItems(map)
-console.log(map);
+queryAPI(endpoint);
+console.log(weakMap.get(endpoint));
+
+queryAPI(endpoint);
+console.log(weakMap.get(endpoint));
+
+queryAPI(endpoint);
+queryAPI(endpoint);
+queryAPI(endpoint);
+queryAPI(endpoint);
