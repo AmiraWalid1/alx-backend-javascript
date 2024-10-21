@@ -1,9 +1,11 @@
 function cleanSet(mySet, str) {
-  let newstr = '';
+  const newArr = [];
   mySet.forEach((element) => {
-    newstr += str && element.startsWith(str) ? `${element.substring(str.length)}-` : '';
+    if (typeof str === 'string' && str && typeof element === 'string' && element.startsWith(str)) {
+      newArr.push(element.substring(str.length));
+    }
   });
-  return newstr.slice(0, -1);
+  return newArr.join('-');
 }
 
 module.exports = cleanSet;
