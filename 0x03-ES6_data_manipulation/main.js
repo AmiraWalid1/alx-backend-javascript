@@ -1,18 +1,3 @@
-import { queryAPI, weakMap } from "./100-weak.js";
+import createInt8TypedArray from "./5-typed_arrays.js";
 
-const endpoint = { protocol: 'http', name: 'getUsers' };
-weakMap.get(endpoint);
-console.log(weakMap.has(endpoint));
-
-queryAPI(endpoint);
-console.log(weakMap.has(endpoint));
-
-console.log(weakMap.get(endpoint));
-
-queryAPI(endpoint);
-console.log(weakMap.get(endpoint));
-
-queryAPI(endpoint);
-queryAPI(endpoint);
-queryAPI(endpoint);
-queryAPI(endpoint);
+console.log(createInt8TypedArray(10, 2, 89));
