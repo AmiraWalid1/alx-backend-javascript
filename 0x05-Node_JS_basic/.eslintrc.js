@@ -26,12 +26,12 @@ module.exports = {
         'error',
         'LabeledStatement',
         'WithStatement',
-    ],
-  },
-  overrides:[
-    {
-      files: ['*.js'],
-      excludedFiles: 'babel.config.js',
-    }
-  ]
+      ],
+    },
+    overrides:[
+      {
+        files: ['*.js'],
+        excludedFiles: 'babel.config.js',
+      }
+    ]
 };
